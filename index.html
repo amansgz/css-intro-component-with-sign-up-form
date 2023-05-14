@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- 400, 500, 600 ,700 Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src= "./scripts/main.js"></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class= "main-content">
+    <div class= "intro">
+      <h1 class= "title">
+        Learn to code by watching others
+      </h1>
+      <p class= "text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+      </p> 
+    </div>
+
+    <p class= "trial">
+      <strong>
+        Try it free 7 days
+      </strong> 
+      then $20/mo. thereafter
+    </p>
+
+    <form action= "#" class= "form">
+      <div class= "input-control">
+        <label for= "first-name"></label>
+        <input 
+          type= "text" 
+          placeholder= "First Name" 
+          name= "first-name"
+          pattern= "[A-Za-z]+"
+          id= "input_name"
+          class= "input-value">
+        <svg class="icon-error">
+          <use href= "#icon-error"></use>
+        </svg>
+        <p class= "error"></p>
+      </div>
+    
+      <div class= "input-control">
+        <label for= "last-name"></label>
+        <input 
+          type= "text" 
+          placeholder= "Last Name" 
+          name= "last-name"
+          pattern= "[A-Za-z]+"
+          class= "input-value">
+        <svg class="icon-error">
+          <use href= "#icon-error"></use>
+        </svg>
+        <p class= "error"></p>
+      </div>
+    
+      <div class= "input-control">
+        <label for= "email"></label>
+        <input 
+          type="text"
+          placeholder= "Email Address" 
+          name= "email"  
+          class= "input-email">
+        <svg class="icon-error">
+          <use href= "#icon-error"></use>
+        </svg>
+        <p class= "error"></p>
+      </div>
+        
+      <div class= "input-control">
+        <label for= "password"></label>
+        <input 
+          type= "password" 
+          placeholder= "Password" 
+          name= "password"  
+          class= "input-value">
+        <svg class="icon-error">
+          <use href= "#icon-error"></use>
+        </svg>
+        <p class ="error"></p>
+      </div>
+
+      <button 
+        type="submit" 
+        class= "btn-submit"
+        id= "btn-submit">
+        Claim your free trial 
+      </button>
+
+    <small class= "agreement">
+      By clicking the button, you are agreeing to our 
+      <strong>
+        Terms and Services
+      </strong>  
+    </small>
+      
+  </form>
+  </main>
+</body>
+</html>
+<div style="display:none;">
+  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" id="icon-error"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+</div>
