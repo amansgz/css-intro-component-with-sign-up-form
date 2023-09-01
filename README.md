@@ -1,10 +1,4 @@
-# 👩‍💻 Frontend Mentor - Intro component with sign up form
-
-[Frontend Mentor challenges](https://www.frontendmentor.io/) help you improve your coding skills by building realistic projects.
-
-This is a solution for [Intro component with sign up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) challenge.
-
-![Design preview for the Intro component with sign up form coding challenge](./css/images/preview.png)
+# 👩‍💻 Intro component with sign up form
 
 
 ## The challenge
@@ -28,10 +22,19 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-## Live site solution
 
-[Live site](https://amansgz.github.io/css-intro-component-with-sign-up-form/) deployed with GitHub Pages.
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-intro-component-with-sign-up-form/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Author
+![Design preview for the Intro component with sign up form coding challenge](./css/images/preview.png)
 
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
