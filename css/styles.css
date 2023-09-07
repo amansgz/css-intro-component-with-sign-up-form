@@ -157,18 +157,18 @@ main {
 /*********************/
 .footer {
     margin-top: auto;
-    padding: 2rem var(--inline-padding);
+    padding: 6rem var(--inline-padding) 2rem;
     text-align: center;
     color: var(--white);
 }
 .footer__attribution a {
     text-decoration: none;
-    color: var(--soft-blue);
+    color: var(--white);
     transition: color .1s ease;
 }
 .footer__attribution a:hover,
 .footer__attribution a:focus-visible {
-    color: var(--cyan);
+    color: var(--light-grayish-blue);
 }
   
 /***********************
@@ -194,10 +194,10 @@ main {
         grid-column: 2 / 3; 
     }
     .form__title {
-        width: 50vw;
+        width: 40vw;
     }
     .form {
-        width: 50vw;
+        width: 40vw;
     }
     
 }
