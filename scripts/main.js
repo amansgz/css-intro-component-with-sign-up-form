@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
-const inputValue = document.querySelectorAll('.input-value');
-const inputEmail = document.querySelector('.input-email');
-const btnSubmit = document.getElementById('btn-submit');
+const inputValue = document.querySelectorAll('.input__value');
+const inputEmail = document.querySelector('.input__email');
+const btnSubmit = document.getElementById('btnSubmit');
 
 
 form.addEventListener('submit', (e) => {
@@ -33,7 +33,7 @@ function validateEmailInput() {
 
   if(inputEmail.value == '' || inputEmail.value == null) {
     setErrorMessage(inputEmail, 'Email cannot be empty');
-  } else if(!validation){
+  } else if(!validation) {
       setErrorMessage(inputEmail, 'Looks like this is not an email');
   } else {
     setSuccess(inputEmail);
@@ -47,22 +47,23 @@ function isValidEmail(email) {
 }
 
 function setErrorMessage(element, message) {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-  const iconError =  inputControl.querySelector('.icon-error');
+  const inputContainer = element.parentElement;
+  const errorMessage = inputContainer.querySelector('.error__message');
+  const errorIcon = inputContainer.querySelector('.error__icon');
  
-  errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success');
-  iconError.style.opacity = '1';
+  errorMessage.innerText = message;
+  inputContainer.classList.add('border__error');
+  inputContainer.classList.remove('border__success');
+  errorIcon.style.opacity = '1';
 }
 
 function setSuccess(element) {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-  const iconError =  inputControl.querySelector('.icon-error');
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
-  iconError.style.opacity = '0';
+  const inputContainer = element.parentElement;
+  const errorMessage = inputContainer.querySelector('.error__message');
+  const errorIcon = inputContainer.querySelector('.error__icon');
+  
+  errorMessage.innerText = '';
+  inputContainer.classList.add('border__success');
+  inputContainer.classList.remove('border__error');
+  errorIcon.style.opacity = '0';
 }
